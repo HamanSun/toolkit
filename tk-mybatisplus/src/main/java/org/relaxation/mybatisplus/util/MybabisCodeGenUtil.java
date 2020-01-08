@@ -20,14 +20,16 @@ public class MybabisCodeGenUtil {
     }
 
     private static final String AUTHOR = "jjsunw";
-    private static final String DB_DOMAIN = "dbhost/dbname";
-    private static final String DB_USERNAME = "dbuser";
-    private static final String DB_PASSWORD = "pwd";
+    private static final String DB_DOMAIN = "10.24.66.60/db2";
+    private static final String DB_USERNAME = "dev";
+    private static final String DB_PASSWORD = "qwer1234";
+    private static final String PROJECT_NAME = "tk-mybatisplus";
     private static final String PACKAGE_NAME = "org.relaxation.mybatisplus";
-    private static final String TABLE_PRIFIX = "";
+    private static final String TABLE_PRIFIX = "t_";
+
 
     public static void main(String[] args) {
-        genCodes("agent_point_history");
+        genCodes("t_girl");
     }
 
     public static void genCodes(String tableNames) {
@@ -37,7 +39,7 @@ public class MybabisCodeGenUtil {
         config.setActiveRecord(true)//开启AR模式
                 .setAuthor(AUTHOR)//设置作者
                 //生成路径(一般都是生成在此项目的src/main/java下面)
-                .setOutputDir(projectPath + "/src/main/java")
+                .setOutputDir(projectPath + "/" + PROJECT_NAME + "/src/main/java")
                 .setFileOverride(true)//第二次生成会把第一次生成的覆盖掉
                 .setIdType(IdType.AUTO)//主键策略
                 .setServiceName("%sService")//生成的service接口名字首字母是否为I，这样设置就没有I
@@ -63,11 +65,11 @@ public class MybabisCodeGenUtil {
         PackageConfig packageConfig = new PackageConfig();
         packageConfig.setParent(PACKAGE_NAME)//设置包名的parent
                 //.setMapper("dao.agent")
-                .setMapper("dao")
+                .setMapper("dao.db1")
                 .setService("service")
                 .setController("controller")
                 .setEntity("entity")
-                .setXml("dao/mapper");//设置xml文件的目录
+                .setXml("dao/db1/mapper");//设置xml文件的目录
                 //.setXml("dao/agent/mapper");//设置xml文件的目录
         //5、整合配置
         AutoGenerator autoGenerator = new AutoGenerator();

@@ -1,7 +1,5 @@
 package org.relaxation.mybatisplus.config.multipledatasource;
 
-import com.prudential.prudentialvoice.constants.DBTypeEnum;
-
 /**
  * @program DbContextHolder
  * @description: 设置、获取数据源
