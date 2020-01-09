@@ -1,0 +1,15 @@
+1. 安装mongodb
+    > docker search mongo
+    > docker pull mongo
+    > create volume mongodb
+    > docker run -d -p 27017:27017 -v mongodb:/data/db --name mongodbserver --restart always --network user-bridge mongo:latest
+2. 创建数据库和用户
+    > docker exec -it mongodbserver bash
+    > mongo
+    > use toolkit -- 创建数据库
+    > db -- 查询当前使用的数据库
+    > show dbs -- 查询有哪些数据库(新创建的数据库toolkit不会出现在列表中，除非已经往toolkit里添加了数据)
+    > show users -- 查询当前数据库用户
+    > db.createUser({user:"toolkit",pwd:"qwer1234",roles:[{role:"dbAdmin", db:"toolkit"}]}) -- 创建用户
+    > db.auth('toolkit','qwer1234') -- 验证用户
+    > db.sys.insert({"admin":"123456"}) -- 创建集合sys,并添加一条数据admin:123456
