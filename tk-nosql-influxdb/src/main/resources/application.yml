@@ -1,0 +1,6 @@
+spring:
+  influx:
+    url: http://10.24.66.60:8086
+    user: admin
+    password: qwer1234
+    database: toolkit

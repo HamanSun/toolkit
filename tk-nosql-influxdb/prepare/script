@@ -1,0 +1,2 @@
+> docker pull influxdb
+> docker run -d -p 8086:8086 -p 8083:8083 --name influxdbserver --network user-bridge --restart always -v influxdb:/var/lib/influxdb -e influxdb_db=toolkit -e influxdb_admin_enabled=true -e influxdb_admin_user=admin -e influxdb_admin_password=qwer1234 -e influxdb_user=dev -e influxdb_user_password=qwer1234 influxdb:latest
