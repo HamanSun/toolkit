@@ -4,3 +4,15 @@ spring:
     user: admin
     password: qwer1234
     database: toolkit
+management:
+  server:
+    port: 9999
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        exclude: env,beans
+      base-path: /monitor
