@@ -55,7 +55,7 @@ public class MyBatisConfig {
         MybatisSqlSessionFactoryBean bean = new MybatisSqlSessionFactoryBean();
         bean.setDataSource(druidDataSource());
         ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
-        bean.setMapperLocations(resolver.getResources("classpath:org/relaxation/**/dao/mapper/*Mapper.xml"));
+        bean.setMapperLocations(resolver.getResources("classpath:org/relaxation/**/dao/dao/*Mapper.xml"));
 
         SqlSessionFactory factory = null;
         try {

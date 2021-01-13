@@ -76,7 +76,7 @@ public class MybatisPlusConfig {
         sqlSessionFactory.setDataSource(multipleDataSource(vpr(), agent()));
 
         ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
-        sqlSessionFactory.setMapperLocations(resolver.getResources("classpath:org/relaxation/**/dao/**/mapper/*Mapper.xml"));
+        sqlSessionFactory.setMapperLocations(resolver.getResources("classpath:org/relaxation/**/dao/**/dao/*Mapper.xml"));
 
         MybatisConfiguration configuration = new MybatisConfiguration();
         configuration.setJdbcTypeForNull(JdbcType.NULL);

@@ -69,8 +69,8 @@ public class MybabisCodeGenUtil {
                 .setService("service")
                 .setController("controller")
                 .setEntity("entity")
-                .setXml("dao/db1/mapper");//设置xml文件的目录
-                //.setXml("dao/agent/mapper");//设置xml文件的目录
+                .setXml("dao/db1/dao");//设置xml文件的目录
+                //.setXml("dao/agent/dao");//设置xml文件的目录
         //5、整合配置
         AutoGenerator autoGenerator = new AutoGenerator();
         autoGenerator.setGlobalConfig(config)
