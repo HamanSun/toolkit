@@ -14,5 +14,10 @@
     <description>阿里计算组件</description>
 
     <dependencies>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>QLExpress</artifactId>
+            <version>3.2.4</version>
+        </dependency>
     </dependencies>
 </project>

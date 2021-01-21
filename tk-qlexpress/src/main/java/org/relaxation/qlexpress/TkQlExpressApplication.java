@@ -1,13 +1,13 @@
-package org.relaxation.common;
+package org.relaxation.qlexpress;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TkCommonApplication {
+public class TkQlExpressApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(TkCommonApplication.class, args);
+        SpringApplication.run(TkQlExpressApplication.class, args);
     }
 
 }

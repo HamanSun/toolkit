@@ -1,0 +1,69 @@
+qlexpress:
+  operator[0]:
+    keyword: 如果
+    realkeyword: if
+    errinfo:
+  operator[1]:
+    keyword: 则
+    realkeyword: then
+    errinfo:
+  operator[2]:
+    keyword: 否则
+    realkeyword: else
+    errinfo:
+  operator[3]:
+    keyword: 返回
+    realkeyword: return
+    errinfo:
+  operator[4]:
+    keyword: 等于
+    realkeyword: '=='
+    errinfo: $1 == $2 不满足期望
+  operator[5]:
+    keyword: 大于
+    realkeyword: '>'
+    errinfo: $1 > $2 不满足期望
+  operator[6]:
+    keyword: 大于等于
+    realkeyword: '>='
+    errinfo: $1 >= $2 不满足期望
+  operator[7]:
+    keyword: 小于
+    realkeyword: '<'
+    errinfo: $1 < $2 不满足期望
+  operator[8]:
+    keyword: 小于等于
+    realkeyword: <=
+    errinfo: $1 <= $2 不满足期望
+  operator[9]:
+    keyword: 不等于
+    realkeyword: '!='
+    errinfo: $1 != $2 不满足期望
+  operator[10]:
+    keyword: 或者
+    realkeyword: '||'
+    errinfo:
+  operator[11]:
+    keyword: 并且
+    realkeyword: '&&'
+    errinfo:
+  operator[12]:
+    keyword: 包含
+    realkeyword: like
+    errinfo: $1 like $2 不满足期望
+  operator[13]:
+    keyword: 存在于
+    realkeyword: in
+    errinfo: $1 in $2 不满足期望
+  operator[14]:
+    keyword: 遍历
+    realkeyword: for
+    errinfo:
+  operator[15]:
+    keyword: 结束
+    realkeyword: break
+    errinfo:
+  operator[16]:
+    keyword: 继续
+    realkeyword: continue
+    errinfo:
