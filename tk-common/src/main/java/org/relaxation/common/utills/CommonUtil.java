@@ -2,6 +2,7 @@ package org.relaxation.common.utills;
 
 import org.apache.commons.lang.StringUtils;
 
+import java.util.Arrays;
 import java.util.UUID;
 
 
@@ -58,6 +59,9 @@ public class CommonUtil {
 //        params="R1010,R1020,R1030";
 //        System.out.println(concatStrToChar(params,","));
 //    }
+public static void main(String[] args) {
+    System.out.println(String.format("%s", Arrays.asList("S","T")));
+}
 }
 
 

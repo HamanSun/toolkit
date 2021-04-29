@@ -11,7 +11,7 @@
     <artifactId>tk-qlexpress</artifactId>
     <version>${parent.version}</version>
     <name>tk-qlexpress</name>
-    <description>阿里计算组件</description>
+    <description>阿里计算组件（Quick Laconic Express）</description>
 
     <dependencies>
         <dependency>
