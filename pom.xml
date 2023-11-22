@@ -29,8 +29,7 @@
     <modules>
         <module>tk-mybatisplus</module>
         <module>tk-common</module>
-        <module>tk-nosql/tk-nosql-redis/tk-nosql-redis-redisson</module>
-        <module>tk-activiti</module>
+        <module>tk-dynamicdatasource</module>
     </modules>
 
     <dependencies>

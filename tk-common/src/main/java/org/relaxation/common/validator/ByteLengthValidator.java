@@ -9,7 +9,7 @@ import javax.validation.ConstraintValidatorContext;
 /**
  * 字符型数据字段的验证器。
  *
- * @author Lao liu
+ * @author isylv
  * @since 2019-07-19
  */
 public class ByteLengthValidator implements ConstraintValidator<ByteLength, String> {

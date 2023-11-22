@@ -20,16 +20,16 @@ public class MybabisCodeGenUtil {
     }
 
     private static final String AUTHOR = "jjsunw";
-    private static final String DB_DOMAIN = "10.24.66.60/db2";
-    private static final String DB_USERNAME = "dev";
-    private static final String DB_PASSWORD = "qwer1234";
-    private static final String PROJECT_NAME = "tk-mybatisplus";
-    private static final String PACKAGE_NAME = "org.relaxation.mybatisplus";
+    private static final String DB_DOMAIN = "rm-cn-x0r3h12hm000hyzo.rwlb.rds.aliyuncs.com/tmp_scctp";
+    private static final String DB_USERNAME = "u_jjsunw";
+    private static final String DB_PASSWORD = "u_jjsunw@123";
+    private static final String PROJECT_NAME = "tk-dynamicdatasource";
+    private static final String PACKAGE_NAME = "org.relaxation.dynamicdatasource";
     private static final String TABLE_PRIFIX = "t_";
 
 
     public static void main(String[] args) {
-        genCodes("t_girl");
+        genCodes("scctp_group");
     }
 
     public static void genCodes(String tableNames) {
@@ -65,11 +65,11 @@ public class MybabisCodeGenUtil {
         PackageConfig packageConfig = new PackageConfig();
         packageConfig.setParent(PACKAGE_NAME)//设置包名的parent
                 //.setMapper("dao.agent")
-                .setMapper("dao.db1")
+                .setMapper("dao")
                 .setService("service")
                 .setController("controller")
                 .setEntity("entity")
-                .setXml("dao/db1/dao");//设置xml文件的目录
+                .setXml("dao/mapper");//设置xml文件的目录
                 //.setXml("dao/agent/dao");//设置xml文件的目录
         //5、整合配置
         AutoGenerator autoGenerator = new AutoGenerator();

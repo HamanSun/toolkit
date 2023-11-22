@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.relaxation.dynamicdatasource.dao.ScctpGroupMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="org.relaxation.dynamicdatasource.entity.ScctpGroup">
+        <id column="id" property="id" />
+        <result column="directory_id" property="directoryId" />
+        <result column="group_name" property="groupName" />
+        <result column="create_time" property="createTime" />
+        <result column="modify_time" property="modifyTime" />
+        <result column="creator" property="creator" />
+        <result column="modifier" property="modifier" />
+        <result column="sort" property="sort" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, directory_id, group_name, create_time, modify_time, creator, modifier, sort
+    </sql>
+    <insert id="save">
+        insert into scctp_group(directory_id, group_name, create_time, modify_time, creator, modifier)
+        values (#{directoryId}, #{groupName}, #{createTime}, #{modifyTime}, #{creator}, #{modifier})
+    </insert>
+</mapper>
